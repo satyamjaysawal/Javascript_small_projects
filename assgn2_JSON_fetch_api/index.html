@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch JSON API</title>
+    <style>
+        .skeleton-loader {
+          display: inline-block;
+          width: 100px;
+          height: 20px;
+          background-color: lightgray;
+          animation: skeleton-loading 1s infinite ease-in-out;
+        }
+        
+        @keyframes skeleton-loading {
+          0% { background-color: lightgray; }
+          50% { background-color: gray; }
+          100% { background-color: lightgray; }
+        }
+        
+        .post-container {
+          margin-bottom: 20px;
+        }
+        
+        .post-title {
+          font-weight: bold;
+        }
+        
+        .post-body {
+          margin-top: 5px;
+        }
+      </style>
+</head>
+<body>
+    <div id="posts-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

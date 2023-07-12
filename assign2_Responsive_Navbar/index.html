@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        /* Navbar Styles */
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #333;
+          padding: 10px;
+        }
+    
+        .navbar-brand {
+          color: #fff;
+          font-weight: bold;
+          text-decoration: none;
+        }
+    
+        .navbar-menu {
+          display: flex;
+          flex-direction: row;
+        }
+    
+        .navbar-menu-item {
+          margin-bottom: 10px;
+          padding-right: 10px;
+        }
+    
+        .navbar-menu-item a {
+          color: #fff;
+          text-decoration: none;
+        }
+    
+        /* Hamburger Menu Styles */
+        .hamburger-menu {
+          display: none;
+          cursor: pointer;
+        }
+    
+        @media screen and (max-width: 600px) {
+          .hamburger-menu {
+            display: block;
+          }
+    
+          .navbar-menu {
+            display: none;
+          }
+    
+          .navbar-menu.show {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Logo</a>
+        <div class="hamburger-menu">&#9776;</div>
+        <div class="navbar-menu">
+          <div class="navbar-menu-item"><a href="#">Home</a></div>
+          <div class="navbar-menu-item"><a href="#">About</a></div>
+          <div class="navbar-menu-item"><a href="#">Services</a></div>
+          <div class="navbar-menu-item"><a href="#">Contact</a></div>
+        </div>
+      </nav>
+    
+      <script src="script.js"></script>
+</body>
+</html>
